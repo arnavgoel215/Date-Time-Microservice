@@ -2,7 +2,7 @@ import zmq
 from datetime import datetime
 
 def time_server():
-    context = zmq.Context
+    context = zmq.Context()
     socket = context.socket(zmq.REP)
     socket.bind("tcp://*:5555")
 
